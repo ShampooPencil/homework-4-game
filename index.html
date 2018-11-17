@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Crystal Game</title>
+        <link src="/Users/Shampopencil/Desktop/HomeWorks/homework4/unit-4-game-master/assets/CSS/style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <style>
+            /*div{
+                height: 50px;     //so update: if i didnt have a fix height like the 50px,
+                                  the default just wrapped the text however,long you have text in a column
+                }*/              
+           /* border {
+                border: 1px solid rgb(255, 255, 0);
+            }*/
+            img {
+                height: 200px;
+                width: 200px;
+               
+               
+                
+            }
+            #purpleRupee, #blueRupee, #greenRupee, #redRupee{
+               
+                background-color: skyblue;
+            }
+            body{
+                background-color:lightgrey;
+            }
+            div{
+                background-color: rgb(255, 255, 0);
+                text-align: center;
+                font-size: 20px;
+                
+            }
+            .container{
+                background-color: lightblue;
+            }
+            p{
+                font-size:15px;
+            }
+            #instructions{
+                font-size: 30px;
+            }
+            .col{
+                border: 1px solid rgb(255, 255, 0);
+            }
+            .row{
+                border: 1px solid rgb(255, 255, 0); 
+            }
+            #win_or_lose{
+                font-size: 40px;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="row">
+                <h1>Crystal Game!!!</h1>
+            </div>
+            <div class="row">
+                <div class="col-6 border">
+                    <span id="instructions">INSTRUCTIONS:</span>
+                   <p> * There will be four crystals displayed as buttons on the page.
+                   * You will be shown a random number at the start of the game.
+                   * The game will hide this amount until the player clicks a crystal.
+                  * When they do click one, update the your score counter.
+                    * The player wins if their total score matches the random number from the beginning of the game.
+                    * The player loses if their score goes above the random number.
+                    * The game restarts whenever the player wins or loses.</p>
+                </div>  
+
+            </div>
+            <br/>
+            <div class="row">
+                <div  class="col-3 border">
+                    <div id="mainRandomNum">0</div>
+                    <br/>
+                    <br/>
+                </div>
+                <div class="col-2 border">
+                    <p id="winOrLose">GOOD LUCK!</p>
+                    <p>Wins:<span id="wins">0</span></p>
+                    <p>Losses:<span id="losses">0</span></p>
+                </div>
+            </div>
+            <div class="row">
+                
+                    <div id="blueRupee" class="col-2 border d-flex justify-content-center">
+                    <audio id="rupeeSound" src="/Users/Shampopencil/Desktop/HomeWorks/homework4/unit-4-game-master/assets/LOZFDS_Get_Rupee.wav" type="audio/mpeg"></audio>
+                        <img src="/Users/Shampopencil/Desktop/HomeWorks/homework4/unit-4-game-master/assets/IMAGES/blueRupee16BIT.png">
+                    </div>
+                    <div id="greenRupee" class="col-2 border d-flex justify-content-center">
+                        <audio id="greenSound" src="/Users/Shampopencil/Desktop/HomeWorks/homework4/unit-4-game-master/assets/LOZFDS_Get_Rupee.wav" type="audio/mpeg"></audio>
+                        <img src="/Users/Shampopencil/Desktop/HomeWorks/homework4/unit-4-game-master/assets/IMAGES/rupee-zelda-png-6.png">
+                    </div>
+                    <div id="purpleRupee" class="col-2 border d-flex justify-content-center">
+                        <audio id="purpleSound" src="/Users/Shampopencil/Desktop/HomeWorks/homework4/unit-4-game-master/assets/LOZFDS_Get_Rupee.wav" type="audio/mpeg"></audio>
+                        <img src="/Users/Shampopencil/Desktop/HomeWorks/homework4/unit-4-game-master/assets/IMAGES/purpleRupee16bit.png">
+                    </div>
+                    <div id="redRupee" class="col-2 border d-flex justify-content-center">
+                        <audio id="redSound" src="/Users/Shampopencil/Desktop/HomeWorks/homework4/unit-4-game-master/assets/LOZFDS_Get_Rupee.wav" type="audio/mpeg"></audio>
+                        <img src="/Users/Shampopencil/Desktop/HomeWorks/homework4/unit-4-game-master/assets/IMAGES/redRupee16bit.png">
+                    </div>
+                
+            </div>
+            
+            <div class="row">
+                <div class="col-4 border">
+                    You total score is:
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-4 border">
+                    <div id="points">
+                        0
+                    </div>
+                </div>
+                <div class="col-4 border">
+                    <div id="win_or_lose">
+                            <audio id="winSound" src="/Users/Shampopencil/Desktop/HomeWorks/homework4/unit-4-game-master/assets/LTTP_Secret.wav" type="audio/mpeg"></audio>
+                            <audio id="lossSound" src="/Users/Shampopencil/Desktop/HomeWorks/homework4/unit-4-game-master/assets/Oracle_Boss_Explode.wav" type ="audio/mpeg"></audio>
+                    </div>
+                </div>
+                    <br/>
+                    <br/>
+            </div>
+                    
+        </div>
+                
+
+        
+            
+            <br/>
+            
+        
+        
+
+          
+
+        <script src="/Users/Shampopencil/Desktop/HomeWorks/homework4/unit-4-game-master/assets/javascript/game.js"></script>
+    </body>
+
+</html>
